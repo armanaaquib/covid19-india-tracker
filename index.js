@@ -1,4 +1,10 @@
 const { app } = require('./app');
-const { env } = process;
+const { env, stdout } = process;
 
-app.listen(env.PORT || 8000);
+const main = () => {
+  const port = env.PORT || 8000;
+  app.listen(port);
+  stdout.write(`Listening at port: ${port}\n`);
+};
+
+main();
