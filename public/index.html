@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/fetchRender.js"></script>
     <title>Covid19 India</title>
+    <style>
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1rem;
+      }
+    </style>
   </head>
   <body onload="addStateList()">
     <h1>India Covid19 Status</h1>
-    <h3>Select State:</h3>
+    <div>
+      <h3>Select State:</h3>
+      <p>
+        For More Detail visit
+        <a href="https://www.covid19india.org/">Covid19 India tracker</a>
+      </p>
+    </div>
     <select id="states" onchange="updateStateInfo()"> </select>
     <p></p>
     <table border="1px" align="center">
