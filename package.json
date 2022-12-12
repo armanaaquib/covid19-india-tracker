@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/armanaaquib/covid19-india-tracker#readme",
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.3"
   }
 }
